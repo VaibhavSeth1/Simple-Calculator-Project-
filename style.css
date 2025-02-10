@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-size: large;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: #0f252d;
+  font-family: "Poppins", sans-serif;
+}
+
+.title {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+h1 {
+  font-size: larger;
+  color: white;
+}
+
+/* Calculator box */
+.calculator {
+  background: #1a3c47;
+  padding: 2px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  text-align: center;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 10px;
+  background: #132b34;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  margin: 20px;
+}
+
+input {
+  width: 100%;
+  height: 100px;
+  font-size: 2rem;
+  background: transparent;
+  border: none;
+  color: white;
+  text-align: right;
+  outline: none;
+  padding: 15px;
+}
+
+#live-result {
+  font-size: 1.5rem;
+  color: #3cc4e0;
+  opacity: 0.6;
+  padding-right: 10px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  justify-items: center;
+  margin: 20px;
+}
+
+button {
+  width: 70px;
+  height: 70px;
+  font-size: 1rem;
+  border: none;
+  background: #222222;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #255667;
+  color: #e0f7fa;
+  box-shadow: 0 0 10px #3cc4e0;
+}
+
+button:active {
+  background: #132b34;
+  transform: scale(0.95);
+}
+
+.signs {
+  background: #255667;
+}
+
+.equal {
+  background: #3cc4e0;
+  color: black;
+}
+
+p {
+  margin: 20px;
+  color: white;
+  font-weight: 300;
+  font-size: small;
+  background-color: #222222;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 5px 20px;
+}
+
+p:hover {
+  background: #255667;
+  color: #e0f7fa;
+  box-shadow: 0 0 4px #3cc4e0;
+}
+
+/* Media queries for mobile */
+@media screen and (max-width: 480px) {
+  body {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .calculator {
+    width: 350px;
+  }
+
+  button {
+    width: 60px;
+    height: 60px;
+    font-size: medium;
+    font-weight: 500;
+  }
+}
