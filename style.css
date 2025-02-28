@@ -128,7 +128,7 @@ p:hover {
   box-shadow: 0 0 4px #3cc4e0;
 }
 
-/* Media queries for mobile */
+/* Media queries */
 @media screen and (max-width: 480px) {
   body {
     width: 100%;
